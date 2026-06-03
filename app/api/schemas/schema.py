@@ -19,3 +19,6 @@ class TTSJobResponse(BaseModel):
     status: JobStatus
     download_url: str | None = None
     error: str | None = None
+    chunks_done: int | None = None
+    chunks_total: int | None = None
+    eta_s: float | None = None

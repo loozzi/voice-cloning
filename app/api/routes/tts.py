@@ -27,6 +27,9 @@ async def get_tts_status(job_id: str) -> TTSJobResponse:
         status=state["status"],
         download_url=state.get("download_url"),
         error=state.get("error"),
+        chunks_done=state.get("chunks_done"),
+        chunks_total=state.get("chunks_total"),
+        eta_s=state.get("eta_s"),
     )
 
 

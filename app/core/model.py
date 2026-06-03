@@ -10,7 +10,7 @@ def get_model():
         _model = Qwen3TTSModel.from_pretrained(
             "g-group-ai-lab/gwen-tts-0.6B",
             device_map="auto",
-            dtype=torch.float16,
+            dtype=torch.bfloat16,
             attn_implementation="eager",
         )
 
